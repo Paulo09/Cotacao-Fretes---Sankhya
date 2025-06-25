@@ -7,6 +7,8 @@ import br.com.sankhya.extensions.actionbutton.ContextoAcao;
 import br.com.sankhya.extensions.actionbutton.QueryExecutor;
 import br.com.sankhya.extensions.actionbutton.Registro;
 
+//@PauloCastro d - Card: 3508 (Criar Botão para Fechar Cotação)
+
 public class AcaoFecharCotacao implements AcaoRotinaJava {
 	@Override
 	public void doAction(ContextoAcao contexto) throws Exception {
@@ -22,7 +24,7 @@ public class AcaoFecharCotacao implements AcaoRotinaJava {
 				QueryExecutor query = contexto.getQuery();
 				 query.update("UPDATE AD_COTACAOFRETE "
 				 		     +" SET STATUSCOTACAO = 'FECHADA'"
-				 		     +"where IDCOTACAO ="+nuCotacao);
+				 		     +"where IDCOTACAO =?");
 				 contexto.setMensagemRetorno("Cotação, Número:"+nuCotacao+" Aprovada com Sucesso!!!");
 			}else{
 				contexto.setMensagemRetorno("Sem cotação a serem Aprovadas!!!");
@@ -32,8 +34,7 @@ public class AcaoFecharCotacao implements AcaoRotinaJava {
 		contexto.setMensagemRetorno("Erro!: "+e.getMessage());
 	}finally{
 	}
-		
-		
+			
 	}
   }
 }
