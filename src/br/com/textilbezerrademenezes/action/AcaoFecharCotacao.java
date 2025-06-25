@@ -7,7 +7,7 @@ import br.com.sankhya.extensions.actionbutton.ContextoAcao;
 import br.com.sankhya.extensions.actionbutton.QueryExecutor;
 import br.com.sankhya.extensions.actionbutton.Registro;
 
-//@PauloCastro - Card: 3508 (Criar Botão para Fechar Cotação)
+//@PauloCastro d - Card: 3508 (Criar Botão para Fechar Cotação)
 
 public class AcaoFecharCotacao implements AcaoRotinaJava {
 	@Override
