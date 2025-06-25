@@ -32,8 +32,7 @@ public class AcaoFecharCotacao implements AcaoRotinaJava {
 		contexto.setMensagemRetorno("Erro!: "+e.getMessage());
 	}finally{
 	}
-		
-		
+			
 	}
   }
 }
